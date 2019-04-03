@@ -42,6 +42,5 @@ it('should render a ProductSection for each product', async () => {
   const component = shallow(<App />);
   await waitForAsync();
   component.update();
-  
   expect(component.find(ProductSection)).toHaveLength(1);
 });

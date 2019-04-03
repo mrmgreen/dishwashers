@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: [{poo:1}]
+      products: []
     }
   }
 
@@ -40,7 +40,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
         { this.state.products.length > 0 &&
-            this.state.products.map((product, id) => <ProductSection key={id} />)
+            this.state.products.map((product, id) => <ProductSection key={id} product={product} />)
         }
         </header>
       </div>
