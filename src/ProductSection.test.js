@@ -19,11 +19,22 @@ const product = {
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<ProductSection product />, div);
+  ReactDOM.render(<ProductSection product={product} />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
 it('renders a title', () => {
-  const component = shallow(<ProductSection product />);
+  const component = shallow(<ProductSection product={product} />);
   expect(component.find('.product_title')).toHaveLength(1);
+});
+
+it('renders a price from now field', () => {
+  const component = shallow(<ProductSection product={product} />);
+  expect(component.find('.price')).toHaveLength(1);
+});
+
+it('renders a price from now.to field', () => {
+  const productToPrice = { ...product, price:{ now: { from:'20.00', to: '19.00' }}}
+  const component = shallow(<ProductSection product={productToPrice} />);
+  expect(component.find('.price')).toHaveLength(1);
 });

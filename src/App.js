@@ -21,9 +21,9 @@ class App extends Component {
     const gridAPI = 'http://localhost:4000/grid';
     axios.get(gridAPI)
       .then(response => {
-        if(response.data && response.data.products !== undefined ) {
+        if (response.data && response.data.products !== undefined ) {
           const products = filterProductsGrid(response.data.products);
-          if(this._isMounted){
+          if (this._isMounted){
             this.setState({ products });
           }
         }
