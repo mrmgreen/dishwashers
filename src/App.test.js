@@ -5,7 +5,7 @@ import App from './App';
 import axios from 'axios';
 
 jest.mock('axios');
-const products = [
+const productsData = [
   {
     productId: 1391191,
     title:"Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White",
@@ -20,6 +20,9 @@ const products = [
     image: "//johnlewis.scene7.com/is/image/JohnLewis/233326789?",
   }
 ];
+// const gridAPI = 'https://api.johnlewis.com/v1/products/search?q=dishwasher&key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb&pageSize=20';
+const gridAPI = 'http://localhost:4000/grid';
+axios.get.mockResolvedValue({data: productsData});
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -28,8 +31,6 @@ it('renders without crashing', () => {
 });
 
 it('makes a request to the product grid API when the grid page loads', () => {
-  const gridAPI = 'https://api.johnlewis.com/v1/products/search?q=dishwasher&key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb&pageSize=20';
-  axios.get.mockResolvedValue(products);
   shallow(<App />);
   expect(axios.get).toBeCalled();
   expect(axios.get).toBeCalledWith(gridAPI);
