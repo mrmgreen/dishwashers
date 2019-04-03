@@ -26,15 +26,24 @@ it('renders without crashing', () => {
 it('renders a title', () => {
   const component = shallow(<ProductSection product={product} />);
   expect(component.find('.product_title')).toHaveLength(1);
+  expect(component.find('.product_title').text()).toEqual("Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White");
 });
 
 it('renders a price from now field', () => {
   const component = shallow(<ProductSection product={product} />);
   expect(component.find('.price')).toHaveLength(1);
+  expect(component.find('.price').text()).toEqual('£220.00')
 });
 
 it('renders a price from now.to field', () => {
   const productToPrice = { ...product, price:{ now: { from:'20.00', to: '19.00' }}}
   const component = shallow(<ProductSection product={productToPrice} />);
   expect(component.find('.price')).toHaveLength(1);
+  expect(component.find('.price').text()).toEqual('£19.00')
+});
+
+it('renders an image', () => {
+  const component = shallow(<ProductSection product={product} />);
+  expect(component.find('img')).toHaveLength(1);
+  expect(component.find('img[src="//johnlewis.scene7.com/is/image/JohnLewis/233326789?"]')).toHaveLength(1);
 });

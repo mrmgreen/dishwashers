@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 function ProductSection(props) {
-  const { title, price: { now } } = props.product;
+  const { title, price: { now }, image } = props.product;
   let priceToPay;
 
   if (typeof now === "object") {
@@ -9,10 +9,15 @@ function ProductSection(props) {
   }
 
   return ( 
-    <Fragment>
-      <div className='product_title'>{title}</div>
-      <div className='price'>£{ priceToPay || now}</div>
-    </Fragment>
+    <div className="productSection">
+      <div className="product_section_top">
+        <img src={image} alt="dishwasher"/>
+      </div>
+      <div className="product_section_bottom">
+        <div className='product_title'>{title}</div>
+        <div className='price'>£{ priceToPay || now}</div>
+      </div>
+    </div>
   )
 }
 
