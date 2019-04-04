@@ -1,6 +1,6 @@
 function filterProduct(objectToFilter) {
-  const { title, media, price, details: { productInformation }, displaySpecialOffer, additionalServices: { includedServices }, code, features } =  objectToFilter;
-  return { title, media, price, details: { productInformation }, displaySpecialOffer, additionalServices: { includedServices }, code, features };
+  const { title, media, price, details: { productInformation, features }, displaySpecialOffer, additionalServices: { includedServices }, code } =  objectToFilter;
+  return { title, media, price, details: { productInformation, features }, displaySpecialOffer, additionalServices: { includedServices }, code };
 }
 
 export default filterProduct;

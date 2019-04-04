@@ -44,6 +44,20 @@ it('filters title, media, price, details.productinformation, displaySpecialOffer
     },
     details: {
       productInformation: "<p>This classic Indesit DIF 04B1 integrated dishwasher is functional and economically friendly and will make a smart addition to your kitchen. Boasting an excellent A+ energy rating, and A rated performance for washing and drying, this Indesit unit offers economic yet outstanding washing and drying results.</p>  <p>Using only 11 litres of water for 13 place settings, this dishwasher is highly efficient. 4 flexible programmes covering a range of washing requirements ensures you can have an intensive wash, handy for removing stubborn food stains, an eco wash saving on time and money and a pre-wash of your dishes. Adjustable racking makes loading and unloading a breeze and handy touch controls tops off this handy dishwasher.</p>",
+      features: [
+        {
+          groupName: "",
+          attributes: [
+            {
+                id: "attr20000353870",
+                name: "Salt Level Indicator",
+                toolTip: "",
+                uom: "",
+                value: "YES"
+            },
+          ]
+        }
+      ]
     },
     displaySpecialOffer: "",
     additionalServices: {
@@ -51,21 +65,7 @@ it('filters title, media, price, details.productinformation, displaySpecialOffer
           "2 year guarantee included"
       ],
     },
-    code: "88701901",
-    features: [
-      {
-          groupName: "",
-          attributes: [
-              {
-                  id: "attr20000353870",
-                  name: "Salt Level Indicator",
-                  toolTip: "",
-                  uom: "",
-                  value: "YES"
-              },
-          ]
-      }
-    ]
+    code: "88701901"
   }
   const expectedFilteredProductData = {
     title:"Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White",
@@ -108,6 +108,20 @@ it('filters title, media, price, details.productinformation, displaySpecialOffer
     },
     details: {
       productInformation: "<p>This classic Indesit DIF 04B1 integrated dishwasher is functional and economically friendly and will make a smart addition to your kitchen. Boasting an excellent A+ energy rating, and A rated performance for washing and drying, this Indesit unit offers economic yet outstanding washing and drying results.</p>  <p>Using only 11 litres of water for 13 place settings, this dishwasher is highly efficient. 4 flexible programmes covering a range of washing requirements ensures you can have an intensive wash, handy for removing stubborn food stains, an eco wash saving on time and money and a pre-wash of your dishes. Adjustable racking makes loading and unloading a breeze and handy touch controls tops off this handy dishwasher.</p>",
+      features: [
+        {
+          groupName: "",
+          attributes: [
+            {
+                id: "attr20000353870",
+                name: "Salt Level Indicator",
+                toolTip: "",
+                uom: "",
+                value: "YES"
+            },
+          ]
+        }
+      ]
     },
     displaySpecialOffer: "",
     additionalServices: {
@@ -116,20 +130,6 @@ it('filters title, media, price, details.productinformation, displaySpecialOffer
       ],
     },
     code: "88701901",
-    features: [
-      {
-          groupName: "",
-          attributes: [
-              {
-                  id: "attr20000353870",
-                  name: "Salt Level Indicator",
-                  toolTip: "",
-                  uom: "",
-                  value: "YES"
-              },
-          ]
-      }
-    ]
   }
 
   expect(filterProduct(productData)).toEqual(expectedFilteredProductData);
