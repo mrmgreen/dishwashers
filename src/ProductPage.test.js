@@ -64,7 +64,7 @@ const productData = {
       }
     ]
   },
-  displaySpecialOffer: "",
+  displaySpecialOffer: "Special Offer: £50 trade in until 15 Dec",
   additionalServices: {
     includedServices: [
         "2 year guarantee included"
@@ -112,12 +112,30 @@ describe('after product API response', () => {
   it('renders a code', async () => {
     await waitForAsync();
     component.update();
-    expect(component.find('.product_information').text()).toContain('Product Code: 88701901')
+    expect(component.find('.product_information').text()).toContain('Product Code: 88701901');
   });
 
   it('renders features', async () => {
     await waitForAsync();
     component.update();
-    expect(component.find('.product_information .features').text()).toContain('Salt Level Indicator')
+    expect(component.find('.product_information .features').text()).toContain('Salt Level Indicator');
+  });
+
+  it('renders the product price', async () => {
+    await waitForAsync();
+    component.update();
+    expect(component.find('.price').text()).toContain('220.00');
+  });
+
+  it('renders the displaySpecialOffer', async () => {
+    await waitForAsync();
+    component.update();
+    expect(component.find('.displaySpecialOffer').text()).toContain('Special Offer: £50 trade in until 15 Dec');
+  });
+
+  it('renders the includedServices', async () => {
+    await waitForAsync();
+    component.update();
+    expect(component.find('.includedServices').text()).toContain('2 year guarantee included');
   });
 })

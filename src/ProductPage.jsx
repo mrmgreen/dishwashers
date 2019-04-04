@@ -63,6 +63,11 @@ class ProductPage extends Component {
                 })
               }
             </div>
+            <div className="payment_info">
+              <div className="price">£{ this.state.product.price &&  this.state.product.price.now }</div>
+              <div className="displaySpecialOffer">{ this.state.product.displaySpecialOffer &&  this.state.product.displaySpecialOffer }</div>
+              <div className="includedServices">{ this.state.product.additionalServices &&  this.state.product.additionalServices.includedServices }</div>
+            </div>
           </div>
         </div>
       </div>
