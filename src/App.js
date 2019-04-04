@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './App.css';
 import filterProductsGrid from './utils/filterProductsGrid';
 import ProductSection from './ProductSection';
 
@@ -37,8 +36,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">Dishwashers</header>
+      <div className="app">
+        <header>Dishwashers</header>
         <div className="products_container">
         { this.state.products.length > 0 &&
             this.state.products.map((product, id) => <ProductSection key={id} product={product} />)

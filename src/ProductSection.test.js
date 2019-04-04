@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Link } from "react-router-dom";
 import { shallow } from 'enzyme';
 import ProductSection from './ProductSection';
+import { MemoryRouter } from 'react-router';
 
 const product = {
   productId: 1391191,
@@ -20,7 +21,10 @@ const product = {
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<ProductSection product={product} />, div);
+  ReactDOM.render(
+    <MemoryRouter>
+      <ProductSection product={product} />
+    </MemoryRouter>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
@@ -52,7 +56,8 @@ it('renders an image', () => {
 it('renders an anchor tag with the product Id', () => {
   // const productApi = "products/1391191?key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb";
   const productApi = "/productpage/1391191";
-  const component = shallow(<ProductSection product={product} />);
+  const component = shallow(
+  <ProductSection product={product} />);
   expect(component.find(Link)).toHaveLength(1);
   expect(component.find(Link).prop('to')).toBe(productApi);
 });
