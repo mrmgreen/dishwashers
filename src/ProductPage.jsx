@@ -47,27 +47,29 @@ class ProductPage extends Component {
           </div>
           <div className="product_information">
             <h2>Product information</h2>
-            <p>Product Code: { this.state.product.code }</p>
             { this.state.product.details && this.productInformation() }
+            <p>Product Code: { this.state.product.code }</p>
+            <hr />
             <h2>Product specification</h2>
+            <hr />
             <div className="features">
               { this.state.product.details && 
                 this.state.product.details.features[0].attributes.map((feature, id) => {
                   const { name, value } = feature;
                   return (
-                    <Fragment key={id} >
+                    <div className="featureWrapper" key={id} >
                       <div className="feature_name">{name}</div>
                       <div className="feature_value">{value}</div>
-                    </Fragment>
+                    </div>
                   )
                 })
               }
             </div>
-            <div className="payment_info">
-              <div className="price">£{ this.state.product.price &&  this.state.product.price.now }</div>
-              <div className="displaySpecialOffer">{ this.state.product.displaySpecialOffer &&  this.state.product.displaySpecialOffer }</div>
-              <div className="includedServices">{ this.state.product.additionalServices &&  this.state.product.additionalServices.includedServices }</div>
-            </div>
+          </div>
+          <div className="payment_info">
+            <div className="price">£{ this.state.product.price &&  this.state.product.price.now }</div>
+            <div className="displaySpecialOffer">{ this.state.product.displaySpecialOffer &&  this.state.product.displaySpecialOffer }</div>
+            <div className="includedServices">{ this.state.product.additionalServices &&  this.state.product.additionalServices.includedServices }</div>
           </div>
         </div>
       </div>
