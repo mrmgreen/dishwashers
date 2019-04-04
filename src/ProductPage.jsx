@@ -38,6 +38,10 @@ class ProductPage extends Component {
       <div className="product_page">
         <header>{this.state.product.title}</header>
         <div className="product_container">
+          <div className="product_section_top">
+            { this.state.product.media && 
+              <img src={this.state.product.media.images.urls[0]} alt={this.state.product.media.images.altText}/> }
+          </div>
         </div>
       </div>
     );

@@ -86,27 +86,26 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('makes a request to the product API when the grid page loads', () => {
-  shallow(<ProductPage location={location} />);
-  expect(axios.get).toBeCalled();
-  expect(axios.get).toBeCalledWith(productAPI);
-});
-
-it('renders a title', async () => {
+describe('after product API response', () => {
   const waitForAsync = () => new Promise(resolve => setImmediate(resolve))
   const component = shallow(<ProductPage location={location} />);
-  await waitForAsync();
-  component.update();
-  expect(component.find('header')).toHaveLength(1);
-  expect(component.find('header').text()).toEqual("Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White");
-});
 
+  it('makes a request to the product API when the grid page loads', () => {
+    expect(axios.get).toBeCalled();
+    expect(axios.get).toBeCalledWith(productAPI);
+  });
+  
+  it('renders a title', async () => {
+    await waitForAsync();
+    component.update();
+    expect(component.find('header')).toHaveLength(1);
+    expect(component.find('header').text()).toEqual("Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White");
+  });
 
-it('renders a title', async () => {
-  const waitForAsync = () => new Promise(resolve => setImmediate(resolve))
-  const component = shallow(<ProductPage location={location} />);
-  await waitForAsync();
-  component.update();
-  expect(component.find('header')).toHaveLength(1);
-  expect(component.find('header').text()).toEqual("Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White");
-});
+  it('renders an image', async () => {
+    await waitForAsync();
+    component.update();
+    expect(component.find('img')).toHaveLength(1);
+    expect(component.find('img[src="//johnlewis.scene7.com/is/image/JohnLewis/233326789?"]')).toHaveLength(1);
+  });
+})
