@@ -2,6 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 I'm using normalize.css to clear native styles.
 
+## `npm i`
+
+Install the project dependencies.
+
 ## `npm run server`
 
 Starts a node server on port 4000. This handles the request for the grid and the individual products. I created this server because the John Lewis grid and product API's were not accessible to the application when run in localhost. A Cors error was being thrown.
