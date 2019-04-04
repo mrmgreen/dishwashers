@@ -9,7 +9,7 @@ function ProductSection(props) {
   }
 
   return ( 
-    <div className="productSection">
+    <div className="product_section">
       <div className="product_section_top">
         <img src={image} alt="dishwasher"/>
       </div>

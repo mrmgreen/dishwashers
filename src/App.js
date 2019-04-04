@@ -38,11 +38,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="App-header">Dishwashers</header>
+        <div className="products_container">
         { this.state.products.length > 0 &&
             this.state.products.map((product, id) => <ProductSection key={id} product={product} />)
         }
-        </header>
+        </div>
       </div>
     );
   }
