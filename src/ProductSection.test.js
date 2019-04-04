@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Link } from "react-router-dom";
 import { shallow } from 'enzyme';
 import ProductSection from './ProductSection';
 
@@ -46,4 +47,12 @@ it('renders an image', () => {
   const component = shallow(<ProductSection product={product} />);
   expect(component.find('img')).toHaveLength(1);
   expect(component.find('img[src="//johnlewis.scene7.com/is/image/JohnLewis/233326789?"]')).toHaveLength(1);
+});
+
+it('renders an anchor tag with the product Id', () => {
+  // const productApi = "products/1391191?key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb";
+  const productApi = "/productpage/1391191";
+  const component = shallow(<ProductSection product={product} />);
+  expect(component.find(Link)).toHaveLength(1);
+  expect(component.find(Link).prop('to')).toBe(productApi);
 });
