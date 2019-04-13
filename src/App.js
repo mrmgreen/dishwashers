@@ -38,7 +38,7 @@ class App extends Component {
     return (
       <div className="app">
         <header>Dishwashers</header>
-        <div className="products_container">
+        <div className="products__container">
         { this.state.products.length > 0 &&
             this.state.products.map((product, id) => <ProductSection key={id} product={product} />)
         }

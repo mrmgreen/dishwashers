@@ -10,13 +10,13 @@ function ProductSection(props) {
   }
 
   return ( 
-    <div className="product_section">
+    <div className="product__section">
       <Link to={`/productpage/${productId}`}>
-        <div className="product_section_top">
+        <div className="product__section--top">
           <img src={image} alt="dishwasher"/>
         </div>
-        <div className="product_section_bottom">
-          <div className='product_title'>{title}</div>
+        <div className="product__section--bottom">
+          <div className='product__title'>{title}</div>
           <div className='price'>£{ priceToPay || now}</div>
         </div>
       </Link>

@@ -23,13 +23,14 @@ a {
   text-align: center;
 }
 
-.product_page {
-  color: #929292;
-}
-.products_container {
+.products__container {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
+}
+
+.product__page {
+  color: #929292;
 }
 
 .product_container {
@@ -46,7 +47,7 @@ a {
   font-weight: normal;
 }
 
-.product_page .product_section_top {
+.product_page .product__section_top {
   order:1
 }
 
@@ -93,26 +94,26 @@ a {
   color: black;
 }
 
-.product_section_top {
+.product__section--top {
   height: 200px;
 }
 
-.product_page .product_section_top {
+.product_page .product__section-top {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.product_section_bottom {
+.product__section--bottom {
   height: 60px;
   margin-top: 10px;
   text-align: left;
 }
-.product_section_top img {
+.product__section_top img {
   max-width: 100%;
   max-height: 100%;
 }
 
-.product_section {
+.product__section {
   box-sizing: border-box;
   min-width: 33.33%;
   max-width: 33.33%;
@@ -131,36 +132,36 @@ a {
 }
 
 /* first element */
-.product_section:nth-child(1) { 
+.product__section:nth-child(1) { 
   border-width:  1px  1px 1px 1px;
 }
 
 /* top row index 1 to 3 */
-.product_section:nth-child(n+2):nth-child(-n+3) { 
+.product__section:nth-child(n+2):nth-child(-n+3) { 
   border-width:  1px  1px 1px 0;
 }
 
 /* first of each row except the first row */
 @media (max-width: 767px) {
-  .product_section:nth-child(n+2):nth-child(3n+1) {
+  .product__section:nth-child(n+2):nth-child(3n+1) {
     border-width:  0  1px 1px 1px;
   }
 }
 
 @media (min-width: 768px) {
-  .product_section {
+  .product__section {
     min-width: 25%;
     max-width: 25%;
     border-width:  0  1px 1px  0  
   }
 
   /* top row index 2 to 4 */
-  .product_section:nth-child(n+2):nth-child(-n+4) { 
+  .product__section:nth-child(n+2):nth-child(-n+4) { 
     border-width:  1px  1px 1px 0;
   }
 
   /* first of each row except the first row */
-  .product_section:nth-child(n+2):nth-child(4n+1) {
+  .product__section:nth-child(n+2):nth-child(4n+1) {
     border-width:  0  1px 1px 1px;
   }
 }
@@ -173,7 +174,7 @@ a {
     padding: 25px;
   }
   
-  .product_page .product_section_top {
+  .product_page .product__section_top {
     box-sizing: border-box;
     min-width: 70%;
     max-width: 70%;
@@ -196,7 +197,7 @@ a {
     box-sizing: border-box;
   }
 
-  .product_details, .features {
+  .product_details, .product__features {
     padding-right: 25px;
   }
 }

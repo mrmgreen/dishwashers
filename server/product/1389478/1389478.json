@@ -1,0 +1,518 @@
+{
+    "productId": "1389478",
+    "bundleProducts": [],
+    "details": {
+        "returns": "<div class=\"par parsys\">\n <div class=\"cms30r section\">\n  <div class=\"free-html\"> \n   <style>#cq-returns-info p a{padding:0;} #cq-returns-info h2{padding:18px 0 16px 0; border-bottom: 1px solid #bfbdb7; font-size: 18px; font-weight: bold;} #cq-returns-info p{padding:0 0 6px;}\n   </style>\n   <div id=\"cq-returns-info\"> \n    <h2>Returns</h2> \n    <p>If you’ve changed your mind about keeping your purchase, please return it in its original condition with proof of purchase and we’ll exchange or refund it. Unless faulty, this should be within 35 days of receiving your order. By original condition, we’d expect this to mean that you’ve kept packaging and labels, and that the item is undamaged and unused.</p> \n    <p>You can return for free in the UK via John Lewis and Waitrose Shops, Royal Mail, Collect+ or MyHermes. If you need to arrange collection of large or heavy items, call us on <strong>03456 049 049</strong>. For international returns queries, call us on <strong>+44 1698 545 454</strong></p> \n    <p>You’ll find returns information on your delivery note. Exceptions apply to certain products - <a href=\"/customer-services/information-about-ordering-and-returning-products#refund\">find out more about our refund policy</a></p>\n   </div>\n  </div>\n </div>\n</div>",
+        "returnsHeadline": "<div class=\"par parsys\">\n <div class=\"cms30r section\">\n  <div class=\"free-html\"> \n   <style type=\"text/css\">.free-html a.more-details {   font-weight:normal;}}.returns-info { float:left;}.returns-info h2 {float:left;padding-right:10px;}.returns-info-link { padding:4px 0 15px 0;}\n   </style>\n   <div class=\"returns-info\">\n    <h2><a href=\"#tabinfo-returns\" class=\"tab-link\">Returns -</a></h2>\n    <div class=\"returns-info-link\">\n     <a href=\"#tabinfo-returns\" class=\"more-details \">See more details</a>\n    </div>\n   </div>\n  </div>\n </div>\n</div>",
+        "termsAndConditions": "",
+        "productInformation": "<p>Enjoy style and flexibility with Indesit&rsquo;s DFG 15B1 K dishwasher. Boasting an excellent A+ energy rating, and A rated performance for washing and drying, this Indesit unit offers economic yet outstanding washing and drying results.</p>  <p>This classic dishwasher is functional and easy to use. Using only 11 litres of water for 13 place settings, this dishwasher is highly efficient. 5 flexible programmes covering a range of washing requirements ensures you can have a fast wash, as well as an intensive wash, handy for removing stubborn food stains and an eco wash saving on time and money. Adjustable racking makes loading and unloading a breeze.&nbsp;</p>",
+        "features": [
+            {
+                "groupName": "",
+                "attributes": [
+                    {
+                        "id": "attr20000353870",
+                        "name": "Salt Level Indicator",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353871",
+                        "name": "Dimensions",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "H85 x W60 x D60cm"
+                    },
+                    {
+                        "id": "attr20000353872",
+                        "name": "Type",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "Freestanding"
+                    },
+                    {
+                        "id": "attr20000353873",
+                        "name": "Wash performance",
+                        "toolTip": "Graded on performance A - G, with A being the highest grade. The higher the grade the more energy efficient the appliance.",
+                        "uom": "",
+                        "value": "A"
+                    },
+                    {
+                        "id": "attr20000353874",
+                        "name": "Model name / number",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "DFG 15B1 K"
+                    },
+                    {
+                        "id": "attr20000353875",
+                        "name": "Noise Level",
+                        "toolTip": "How noisy, in decibels, the machine is. The lower the dB, the quieter the appliance",
+                        "uom": "",
+                        "value": "49dB"
+                    },
+                    {
+                        "id": "attr20000353877",
+                        "name": "Rinse Aid Indicator",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353879",
+                        "name": "Water Consumption Per Standard Cycle",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "11L"
+                    },
+                    {
+                        "id": "attr20000353880",
+                        "name": "Time remaining indicator",
+                        "toolTip": "Tells you how long the programme's got to go",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353882",
+                        "name": "Energy Consumption Per Standard Cycle",
+                        "toolTip": "Based on the drying cycle of the standard cotton programme at full load. Actual energy consumption per cycle will depend on how the appliance is used.",
+                        "uom": "",
+                        "value": "1.04kWh/cycle"
+                    },
+                    {
+                        "id": "attr20000353884",
+                        "name": "Adjustable racking",
+                        "toolTip": "Lets you move the racking around to fit large or awkward items",
+                        "uom": "",
+                        "value": "YES"
+                    },
+                    {
+                        "id": "attr20000353885",
+                        "name": "Digital display",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353886",
+                        "name": "Delicate Wash",
+                        "toolTip": "This wash cycle provides a gentle wash for delicate items",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353887",
+                        "name": "Program Sequence Indicator",
+                        "toolTip": "Tells you the progress of your washing/drying cycle",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353888",
+                        "name": "Child lock",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353890",
+                        "name": "Cutlery Holder",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "Basket"
+                    },
+                    {
+                        "id": "attr20000353892",
+                        "name": "Delay Start",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353893",
+                        "name": "Estimated Annual Energy Consumption",
+                        "toolTip": "How much electricity the item would use over a year",
+                        "uom": "",
+                        "value": "295kWh"
+                    },
+                    {
+                        "id": "attr20000353895",
+                        "name": "Place Settings",
+                        "toolTip": "A complete set of items provided for one person at a meal  ",
+                        "uom": "",
+                        "value": "13"
+                    },
+                    {
+                        "id": "attr20000353896",
+                        "name": "Energy Rating ",
+                        "toolTip": "Graded on performance, from A+++ to G, with A+++ being the highest rating. Higher ratings mean better energy efficiency",
+                        "uom": "",
+                        "value": "A+"
+                    },
+                    {
+                        "id": "attr20000353897",
+                        "name": "Dishwasher Size",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "Full"
+                    },
+                    {
+                        "id": "attr20000353898",
+                        "name": "Brand",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "Indesit"
+                    },
+                    {
+                        "id": "attr20000353899",
+                        "name": "Overflow protection",
+                        "toolTip": "An anti-flood device prevents the machine from being damaged by flooding from the inlet pipe",
+                        "uom": "",
+                        "value": "YES"
+                    },
+                    {
+                        "id": "attr20000353901",
+                        "name": "Automatic Load Adjustment",
+                        "toolTip": "Automatically adjusts water level for a smaller load, thus saving time and money",
+                        "uom": "",
+                        "value": "NO"
+                    },
+                    {
+                        "id": "attr20000353903",
+                        "name": "Drying performance",
+                        "toolTip": "Graded on performance A - G, with A being the highest grade",
+                        "uom": "",
+                        "value": "A"
+                    },
+                    {
+                        "id": "attr20000353904",
+                        "name": "Drying System",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "Natural"
+                    },
+                    {
+                        "id": "attr20000353905",
+                        "name": "Quick wash",
+                        "toolTip": "Speedy programme when you need items cleaned quickly",
+                        "uom": "",
+                        "value": "YES"
+                    },
+                    {
+                        "id": "attr20000353906",
+                        "name": "Number of Programs/Settings",
+                        "toolTip": "",
+                        "uom": "",
+                        "value": "5"
+                    },
+                    {
+                        "id": "attr20000353907",
+                        "name": "Estimated Annual Water Consumption",
+                        "toolTip": "The amount of water used in litres per year, based on 220 standard washing cycles for cotton programs at 60°C and 40°C at full and partial load. Actual water consumption will depend on how the appliance is used.",
+                        "uom": "",
+                        "value": "3080L"
+                    }
+                ]
+            }
+        ],
+        "careGuide": [],
+        "featuredArticles": [],
+        "editorsNotes": "<p>Indesit offer a range large and small domestic appliances, providing everyday solutions to everyday needs for your home and kitchen.</p>\n\n<p>Discover their wide range of stylish and energy efficient domestic appliances, with intelligent technologies and design.</p>",
+        "buyingGuides": [
+            {
+                "title": "Hotpoint and Indesit Delivery Exclusions",
+                "image": "//johnlewis.scene7.com/is/image/JohnLewis/pdf_ico",
+                "linkUrl": "https://www.johnlewis.comhttp://johnlewis.scene7.com/is/content/JohnLewis/Hotpoint_Indesit delivery_111213_3dayspdf",
+                "linkText": "Postcode exclusions for this item",
+                "longDescription": "&nbsp;"
+            },
+            {
+                "title": "Dishwashers Buying Guide",
+                "image": "//johnlewis.scene7.com/is/image/JohnLewis/electrical_med_icon?",
+                "linkUrl": "https://www.johnlewis.com/buying-guides/dishwashers-buying-guide",
+                "linkText": "Dishwashers Buying Guide",
+                "longDescription": "Wave farewell to the washing up with your new friend in the kitchen"
+            }
+        ],
+        "sizeGuides": [],
+        "weLikeItBecause": ""
+    },
+    "deliveries": [
+        {
+            "deliveryType": "UK",
+            "options": [
+                {
+                    "id": "418",
+                    "price": "0.00",
+                    "currency": "GBP",
+                    "shortDescription": "Product delivered by our supplier usually in 4 days, depending on postcode",
+                    "standardDescription": "Product delivered by our supplier usually in 4 days, depending on postcode",
+                    "date": "",
+                    "dateMessage": "",
+                    "trialMessage": "",
+                    "isApprovedSupplier": true,
+                    "leadTime": 1,
+                    "cutOffTime": 19
+                }
+            ]
+        }
+    ],
+    "deliverySummary": [
+        {
+            "deliveryType": "TP",
+            "title": "UK delivery",
+            "price": "0.00",
+            "currency": "GBP",
+            "summary": "Product delivered by our supplier usually in 4 days, depending on postcode",
+            "trialMessage": ""
+        }
+    ],
+    "emailMeWhenAvailable": true,
+    "skus": [
+        {
+            "id": "233326778",
+            "skuTitle": "Indesit DFG 15B1 K Dishwasher, Black",
+            "shortSkuTitle": "Indesit DFG 15B1 K",
+            "color": "",
+            "size": "",
+            "sizeHeadline": "",
+            "swatchUrl": "//johnlewis.scene7.com/is/image/JohnLewis/233326778?cropN=0.42105263157894735,0.42105263157894735,0.16842105263157894,0.16842105263157894&",
+            "availability": {
+                "stockLevel": 32000,
+                "availabilityStatus": "INSTOCK",
+                "message": "Available to order",
+                "isUnlimitedStock": true
+            },
+            "price": {
+                "was": "",
+                "then1": "",
+                "then2": "",
+                "now": "249.99",
+                "uom": "",
+                "currency": "GBP"
+            },
+            "code": "81701901",
+            "leadTime": "2",
+            "d2cDeliveryLeadTime": "2",
+            "media": {
+                "images": {
+                    "altText": "Buy Indesit DFG 15B1 K Dishwasher, Black Online at johnlewis.com",
+                    "urls": [
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt1?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt10?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt2?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt3?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt4?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt5?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt6?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt7?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt8?",
+                        "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt9?"
+                    ]
+                },
+                "360images": {
+                    "swfUrl": "//johnlewis.scene7.com/is/content/JohnLewis/360-degree-view",
+                    "urls": []
+                }
+            },
+            "brandName": "Indesit",
+            "unitPriceInfo": {},
+            "priceBand": "",
+            "dynamicAttributes": {
+                "modelnamenumber": "DFG 15B1 K"
+            },
+            "ticketType": "T"
+        }
+    ],
+    "title": "Indesit DFG 15B1 K Dishwasher, Black",
+    "defaultSku": "233326778",
+    "storeOnly": false,
+    "type": "standard",
+    "ageRestriction": 0,
+    "seoURL": "/indesit-dfg-15b1-k-dishwasher-black/p1389478",
+    "isFBL": false,
+    "numberOfReviews": 1,
+    "price": {
+        "was": "",
+        "then1": "",
+        "then2": "",
+        "now": "249.99",
+        "uom": "",
+        "currency": "GBP"
+    },
+    "code": "81701901",
+    "specialOffers": {
+        "priceMatched": "",
+        "offer": "",
+        "customPromotionalMessage": "",
+        "bundleHeadline": "",
+        "customSpecialOffer": {}
+    },
+    "displaySpecialOffer": "",
+    "setDetails": {},
+    "templateType": "media-epic-prodtemplate",
+    "priceBands": [],
+    "legs": [],
+    "swatchCategoryType": "",
+    "deliveryFulfilledBy": "unknown",
+    "additionalServices": {
+        "includedServices": [
+            "2 year guarantee included"
+        ],
+        "optionalServices": [
+            {
+                "id": "233568687",
+                "associatedProductId": "1465506",
+                "title": "5 years Added Care for your home appliance (includes guarantee period)",
+                "description": "All electrical products you buy from us are guaranteed for a minimum of 2 years, at no extra cost. With Added Care, you'll enjoy the same benefits for a period of up to 5 years, while also adding further benefits not included in the original guarantee.",
+                "price": "100.00",
+                "currency": "GBP",
+                "orderOnSite": 1,
+                "type": "ADDED_WARRANTY",
+                "url": "/our-services/more-about-added-care"
+            }
+        ]
+    },
+    "media": {
+        "images": {
+            "altText": "Buy Indesit DFG 15B1 K Dishwasher, Black Online at johnlewis.com",
+            "urls": [
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt1?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt10?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt2?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt3?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt4?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt5?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt6?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt7?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt8?",
+                "//johnlewis.scene7.com/is/image/JohnLewis/233326778alt9?"
+            ]
+        },
+        "360images": {
+            "swfUrl": "//johnlewis.scene7.com/is/content/JohnLewis/360-degree-view",
+            "urls": []
+        },
+        "videos": {
+            "videosList": [
+                {
+                    "type": "jlExternalVideo",
+                    "name": "http://www.isitetv.com/directasset/063125186255063131199224249019.m4v",
+                    "videoImageURL": "//johnlewis.scene7.com/is/image/JohnLewis/233326778?",
+                    "url": "http://www.isitetv.com/directasset/063125186255063131199224249019.m4v"
+                },
+                {
+                    "type": "jlExternalVideo",
+                    "name": "http://www.isitetv.com/directasset/063125186255063132194219244014.m4v",
+                    "videoImageURL": "//johnlewis.scene7.com/is/image/JohnLewis/233326778?",
+                    "url": "http://www.isitetv.com/directasset/063125186255063132194219244014.m4v"
+                },
+                {
+                    "type": "jlExternalVideo",
+                    "name": "http://www.isitetv.com/directasset/063125186255064124186211236006.m4v",
+                    "videoImageURL": "//johnlewis.scene7.com/is/image/JohnLewis/233326778?",
+                    "url": "http://www.isitetv.com/directasset/063125186255064124186211236006.m4v"
+                }
+            ],
+            "videoHost": "//johnlewis.scene7.com",
+            "videoImagePath": "/is/image/JohnLewis/",
+            "prod_vid_thmb": "$prod_vid_thmb$",
+            "videoHeight": "664",
+            "videoWidth": "664",
+            "imgAltText": "Buy Indesit DFG 15B1 K Dishwasher, Black Online at johnlewis.com"
+        }
+    },
+    "setElements": [],
+    "headingTypes": [],
+    "moreFromRange": [],
+    "promotionalFeatures": [
+        {
+            "title": "Indesit DFG 15B1 K Dishwasher, Black installation guide",
+            "iconUrl": "//johnlewis.scene7.com/is/image/JohnLewis/electrical_med_icon?",
+            "linkUrl": "http://johnlewis.scene7.com/is/content/JohnLewis/233326778mnl1pdf",
+            "description": "Indesit DFG 15B1 K Dishwasher, Black installation guide",
+            "longDescription": "Indesit DFG 15B1 K Dishwasher, Black installation guide"
+        },
+        {
+            "title": "Disposal and installation is not available online for this product. Please call 0345 604 8835 to order this product and arrange these services - view opening hours.",
+            "iconUrl": "",
+            "linkUrl": "http://johnlewis.scene7.com/is/content/JohnLewis/contact_centre_opening_hours_d2cpdf ",
+            "description": "",
+            "longDescription": "Disposal and installation services are not available online for this product. Please call 0345 604 8835 to order this product and arrange these services - <a href=\"http://johnlewis.scene7.com/is/content/JohnLewis/contact_centre_opening_hours_d2cpdf\">view opening hours</a>"
+        }
+    ],
+    "setInformation": "",
+    "specialOfferBundles": [],
+    "fixedRelatedProducts": [],
+    "siblingSets": [],
+    "defaultCategory": {
+        "id": "6000047",
+        "name": "Dishwashers"
+    },
+    "releaseDateTimestamp": 0,
+    "crumbs": [
+        {
+            "type": "CATALOGUE",
+            "displayName": "Electricals",
+            "item": "500001",
+            "clickable": "true"
+        },
+        {
+            "type": "CATALOGUE",
+            "displayName": "Dishwashers",
+            "item": "6000047",
+            "clickable": "true"
+        }
+    ],
+    "seoInformation": {
+        "title": "",
+        "description": ""
+    },
+    "isInTopNkuCategory": true,
+    "brand": {
+        "name": "Indesit",
+        "logo": "//johnlewis.scene7.com/is/image/JohnLewis/indesit_brl?"
+    },
+    "swatchAvailable": "",
+    "madeToMeasureDetails": {
+        "type": "",
+        "styles": ""
+    },
+    "isAsafShape": false,
+    "dynamicAttributes": {
+        "timeremainingindicator": "NO",
+        "integratedorfreestanding": "Freestanding",
+        "energyconsumptionpercycle": "1.04kWh/cycle",
+        "cutlerybasket": "Basket",
+        "dishwashersize": "Full",
+        "waterconsumptionstandardcycle": "11L",
+        "saltlevelindicator": "NO",
+        "floodprotection": "YES",
+        "dryingsystem": "Natural",
+        "estimatedannualenergyconsumption": "295kWh",
+        "automaticloadadjustment": "NO",
+        "noiselevel": "49dB",
+        "digitaldisplay": "NO",
+        "delicatewash": "NO",
+        "quickwash": "YES",
+        "homearea": "Clean",
+        "timerdelay": "NO",
+        "childlock": "NO",
+        "dryingperformance": "A",
+        "estimatedannualwaterconsumption": "3080L",
+        "homeappliancetype": "Dishwashers",
+        "programsequenceindicator": "NO",
+        "adjustableracking": "YES",
+        "washperformance": "A",
+        "noofprograms": "5",
+        "placesettings": "13",
+        "rinseaidindicator": "NO"
+    },
+    "excludeFromLiveChat": true,
+    "webPimProductType": "PRODUCT.Home & Garden.Domestic Appliances.Dishwashing Appliances.Dishwasher",
+    "nonPromoMessage": "",
+    "reviewData": []
+}

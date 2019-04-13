@@ -37,41 +37,45 @@ class ProductPage extends Component {
     return <div className="product_details" dangerouslySetInnerHTML={{__html: this.state.product.details.productInformation}} />
   }
   render() {
+    if (this.state.product.media) {
+
+      console.log('this.state.product.media.images.urls[0]', this.state.product.media.images.urls[0]);
+    }
     return (
-      <div className="product_page">
+      <div className="product-page">
         <header>{this.state.product.title}</header>
-        <div className="product_container">
-          <div className="product_section_top">
+        <main className="product-container">
+          <div className="product-section__top">
             { this.state.product.media && 
               <img src={this.state.product.media.images.urls[0]} alt={this.state.product.media.images.altText}/> }
           </div>
-          <div className="product_information">
+          <div className="product-information">
             <h2>Product information</h2>
             { this.state.product.details && this.productInformation() }
             <p>Product Code: { this.state.product.code }</p>
             <hr />
             <h2>Product specification</h2>
             <hr />
-            <div className="features">
+            <div className="product__features">
               { this.state.product.details && 
                 this.state.product.details.features[0].attributes.map((feature, id) => {
                   const { name, value } = feature;
                   return (
-                    <div className="featureWrapper" key={id} >
-                      <div className="feature_name">{name}</div>
-                      <div className="feature_value">{value}</div>
+                    <div className="product__feature-wrapper" key={id} >
+                      <div className="product__feature-name">{name}</div>
+                      <div className="product__feature-value">{value}</div>
                     </div>
                   )
                 })
               }
             </div>
           </div>
-          <div className="payment_info">
+          <div className="product-payment-info">
             <div className="price">£{ this.state.product.price &&  this.state.product.price.now }</div>
-            <div className="displaySpecialOffer">{ this.state.product.displaySpecialOffer &&  this.state.product.displaySpecialOffer }</div>
-            <div className="includedServices">{ this.state.product.additionalServices &&  this.state.product.additionalServices.includedServices }</div>
+            <div className="product-payment-info__displaySpecialOffer">{ this.state.product.displaySpecialOffer &&  this.state.product.displaySpecialOffer }</div>
+            <div className="product-payment-info__includedServices">{ this.state.product.additionalServices &&  this.state.product.additionalServices.includedServices }</div>
           </div>
-        </div>
+        </main>
       </div>
     );
   }
