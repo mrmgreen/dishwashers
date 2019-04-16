@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render basic page with no products 1`] = `
+<div
+  className="app"
+>
+  <header>
+    Dishwashers
+  </header>
+  <div
+    className="products__container"
+  />
+</div>
+`;
+
+exports[`render page with products 1`] = `
+<div
+  className="app"
+>
+  <header>
+    Dishwashers
+  </header>
+  <div
+    className="products__container"
+  />
+</div>
+`;
+
+exports[`render page with products 2`] = `
+<div
+  className="app"
+>
+  <header>
+    Dishwashers
+  </header>
+  <div
+    className="products__container"
+  >
+    <ProductSection
+      key="0"
+      product={
+        Object {
+          "image": "//johnlewis.scene7.com/is/image/JohnLewis/233326789?",
+          "price": Object {
+            "currency": "GBP",
+            "now": "220.00",
+            "then1": "",
+            "then2": "",
+            "uom": "",
+            "was": "",
+          },
+          "productId": 1391191,
+          "title": "Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White",
+        }
+      }
+    />
+  </div>
+</div>
+`;
