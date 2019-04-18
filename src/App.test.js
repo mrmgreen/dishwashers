@@ -31,9 +31,8 @@ beforeEach(() => {
 });
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  const component = shallow(<App />);
+  expect(component).toHaveLength(1);
 });
 
 it('makes a request to the product grid API when the grid page loads', () => {

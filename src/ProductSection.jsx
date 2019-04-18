@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 function ProductSection(props) {
+  if (!props.product) return null
+
   const { title, price: { now }, image, productId } = props.product;
   let priceToPay;
 

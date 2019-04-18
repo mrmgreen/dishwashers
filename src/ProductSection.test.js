@@ -20,18 +20,14 @@ const product = {
 }
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(
-    <MemoryRouter>
-      <ProductSection product={product} />
-    </MemoryRouter>, div);
-  ReactDOM.unmountComponentAtNode(div);
+  const component = shallow(<ProductSection />)
+  expect(component).toHaveLength(1);
 });
 
 it('renders a title', () => {
   const component = shallow(<ProductSection product={product} />);
-  expect(component.find('.product_title')).toHaveLength(1);
-  expect(component.find('.product_title').text()).toEqual("Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White");
+  expect(component.find('.product__title')).toHaveLength(1);
+  expect(component.find('.product__title').text()).toEqual("Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White");
 });
 
 it('renders a price from now field', () => {
