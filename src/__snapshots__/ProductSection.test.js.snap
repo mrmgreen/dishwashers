@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a price from now.to field 1`] = `
+<div
+  className="product__section"
+>
+  <Link
+    to="/productpage/1391191"
+  >
+    <div
+      className="product__section--top"
+    >
+      <img
+        alt="dishwasher"
+        src="//johnlewis.scene7.com/is/image/JohnLewis/233326789?"
+      />
+    </div>
+    <div
+      className="product__section--bottom"
+    >
+      <div
+        className="product__title"
+      >
+        Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White
+      </div>
+      <div
+        className="price"
+      >
+        £
+        19.00
+      </div>
+    </div>
+  </Link>
+</div>
+`;
+
+exports[`renders a product info 1`] = `
+<div
+  className="product__section"
+>
+  <Link
+    to="/productpage/1391191"
+  >
+    <div
+      className="product__section--top"
+    >
+      <img
+        alt="dishwasher"
+        src="//johnlewis.scene7.com/is/image/JohnLewis/233326789?"
+      />
+    </div>
+    <div
+      className="product__section--bottom"
+    >
+      <div
+        className="product__title"
+      >
+        Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White
+      </div>
+      <div
+        className="price"
+      >
+        £
+        220.00
+      </div>
+    </div>
+  </Link>
+</div>
+`;

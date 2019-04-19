@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Link } from "react-router-dom";
 import { shallow } from 'enzyme';
 import ProductSection from './ProductSection';
-import { MemoryRouter } from 'react-router';
 
 const product = {
   productId: 1391191,
@@ -24,36 +21,13 @@ it('renders without crashing', () => {
   expect(component).toHaveLength(1);
 });
 
-it('renders a title', () => {
+it('renders a product info', () => {
   const component = shallow(<ProductSection product={product} />);
-  expect(component.find('.product__title')).toHaveLength(1);
-  expect(component.find('.product__title').text()).toEqual("Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White");
-});
-
-it('renders a price from now field', () => {
-  const component = shallow(<ProductSection product={product} />);
-  expect(component.find('.price')).toHaveLength(1);
-  expect(component.find('.price').text()).toEqual('£220.00')
+  expect(component).toMatchSnapshot();
 });
 
 it('renders a price from now.to field', () => {
   const productToPrice = { ...product, price:{ now: { from:'20.00', to: '19.00' }}}
   const component = shallow(<ProductSection product={productToPrice} />);
-  expect(component.find('.price')).toHaveLength(1);
-  expect(component.find('.price').text()).toEqual('£19.00')
-});
-
-it('renders an image', () => {
-  const component = shallow(<ProductSection product={product} />);
-  expect(component.find('img')).toHaveLength(1);
-  expect(component.find('img[src="//johnlewis.scene7.com/is/image/JohnLewis/233326789?"]')).toHaveLength(1);
-});
-
-it('renders an anchor tag with the product Id', () => {
-  // const productApi = "products/1391191?key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb";
-  const productApi = "/productpage/1391191";
-  const component = shallow(
-  <ProductSection product={product} />);
-  expect(component.find(Link)).toHaveLength(1);
-  expect(component.find(Link).prop('to')).toBe(productApi);
+  expect(component).toMatchSnapshot();
 });

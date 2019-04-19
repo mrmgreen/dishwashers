@@ -37,10 +37,6 @@ class ProductPage extends Component {
     return <div className="product_details" dangerouslySetInnerHTML={{__html: this.state.product.details.productInformation}} />
   }
   render() {
-    if (this.state.product.media) {
-
-      console.log('this.state.product.media.images.urls[0]', this.state.product.media.images.urls[0]);
-    }
     return (
       <div className="product-page">
         <header>{this.state.product.title}</header>

@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import ProductPage from './ProductPage';
-import { MemoryRouter } from 'react-router';
 import axios from 'axios';
 
 jest.mock('axios');
@@ -77,65 +75,26 @@ const productAPI = 'http://localhost:4000/product/1391191';
 axios.get.mockResolvedValue({data: productData });
 const location = { pathname: '/productpage/1391191' };
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(
-    <MemoryRouter>
-      <ProductPage location={location} />
-    </MemoryRouter>, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+describe('ProductPage', () => {
+  let component;
 
-describe('after product API response', () => {
-  const waitForAsync = () => new Promise(resolve => setImmediate(resolve))
-  const component = shallow(<ProductPage location={location} />);
-
-  it('makes a request to the product API when the grid page loads', () => {
-    expect(axios.get).toBeCalled();
-    expect(axios.get).toBeCalledWith(productAPI);
-  });
+  beforeEach(() => {
+    axios.get.mockClear();
+    component = shallow(<ProductPage location={location} />);
+  })
   
-  it('renders a title', async () => {
-    await waitForAsync();
-    component.update();
-    expect(component.find('header')).toHaveLength(1);
-    expect(component.find('header').text()).toEqual("Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White");
-  });
-
-  it('renders an image', async () => {
-    await waitForAsync();
-    component.update();
-    expect(component.find('img')).toHaveLength(1);
-    expect(component.find('img[src="//johnlewis.scene7.com/is/image/JohnLewis/233326789?"]')).toHaveLength(1);
-  });
-
-  it('renders a code', async () => {
-    await waitForAsync();
-    component.update();
-    expect(component.find('.product_information').text()).toContain('Product Code: 88701901');
-  });
-
-  it('renders features', async () => {
-    await waitForAsync();
-    component.update();
-    expect(component.find('.product_information .features').text()).toContain('Salt Level Indicator');
-  });
-
-  it('renders the product price', async () => {
-    await waitForAsync();
-    component.update();
-    expect(component.find('.price').text()).toContain('220.00');
-  });
-
-  it('renders the displaySpecialOffer', async () => {
-    await waitForAsync();
-    component.update();
-    expect(component.find('.displaySpecialOffer').text()).toContain('Special Offer: £50 trade in until 15 Dec');
-  });
-
-  it('renders the includedServices', async () => {
-    await waitForAsync();
-    component.update();
-    expect(component.find('.includedServices').text()).toContain('2 year guarantee included');
-  });
+  describe('after product API response', () => {
+    it('renders without crashing', () => {
+      expect(component).toHaveLength(1);
+    });
+  
+    it('makes a request to the product API when the grid page loads', () => {
+      expect(axios.get).toBeCalledTimes(1);
+      expect(axios.get).toBeCalledWith(productAPI);
+    });
+    
+    it('renders the product fields', () => {
+      expect(component).toMatchSnapshot();
+    });
+  })
 })

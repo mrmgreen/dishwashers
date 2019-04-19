@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductPage after product API response renders the product fields 1`] = `
+<div
+  className="product-page"
+>
+  <header>
+    Indesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White
+  </header>
+  <main
+    className="product-container"
+  >
+    <div
+      className="product-section__top"
+    >
+      <img
+        alt="BuyIndesit DIF 04B1 Ecotime Fully Integrated Dishwasher, White Online at johnlewis.com"
+        src="//johnlewis.scene7.com/is/image/JohnLewis/233326789?"
+      />
+    </div>
+    <div
+      className="product-information"
+    >
+      <h2>
+        Product information
+      </h2>
+      <div
+        className="product_details"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>This classic Indesit DIF 04B1 integrated dishwasher is functional and economically friendly and will make a smart addition to your kitchen. Boasting an excellent A+ energy rating, and A rated performance for washing and drying, this Indesit unit offers economic yet outstanding washing and drying results.</p>  <p>Using only 11 litres of water for 13 place settings, this dishwasher is highly efficient. 4 flexible programmes covering a range of washing requirements ensures you can have an intensive wash, handy for removing stubborn food stains, an eco wash saving on time and money and a pre-wash of your dishes. Adjustable racking makes loading and unloading a breeze and handy touch controls tops off this handy dishwasher.</p>",
+          }
+        }
+      />
+      <p>
+        Product Code: 
+        88701901
+      </p>
+      <hr />
+      <h2>
+        Product specification
+      </h2>
+      <hr />
+      <div
+        className="product__features"
+      >
+        <div
+          className="product__feature-wrapper"
+          key="0"
+        >
+          <div
+            className="product__feature-name"
+          >
+            Salt Level Indicator
+          </div>
+          <div
+            className="product__feature-value"
+          >
+            YES
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="product-payment-info"
+    >
+      <div
+        className="price"
+      >
+        £
+        220.00
+      </div>
+      <div
+        className="product-payment-info__displaySpecialOffer"
+      >
+        Special Offer: £50 trade in until 15 Dec
+      </div>
+      <div
+        className="product-payment-info__includedServices"
+      >
+        2 year guarantee included
+      </div>
+    </div>
+  </main>
+</div>
+`;

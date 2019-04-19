@@ -24,40 +24,26 @@ const productsData = [
 // const gridAPI = 'https://api.johnlewis.com/v1/products/search?q=dishwasher&key=Wu1Xqn3vNrd1p7hqkvB6hEu0G9OrsYGb&pageSize=20';
 const gridAPI = 'http://localhost:4000/grid';
 axios.get.mockResolvedValue({data: { products: productsData }});
-const waitForAsync = () => new Promise(resolve => setImmediate(resolve))
+let component;
 
 beforeEach(() => {
   axios.get.mockClear();
+  component = shallow(<App />);
 });
 
 it('renders without crashing', () => {
-  const component = shallow(<App />);
   expect(component).toHaveLength(1);
 });
 
 it('makes a request to the product grid API when the grid page loads', () => {
-  expect(axios.get).not.toBeCalled();
-  shallow(<App />);
-  expect(axios.get).toBeCalled();
+  expect(axios.get).toBeCalledTimes(1);
   expect(axios.get).toBeCalledWith(gridAPI);
 });
 
-it('should render a ProductSection for each product', async () => {
-  const component = shallow(<App />);
-  await waitForAsync();
-  component.update();
+it('should render a ProductSection for each product', () => {
   expect(component.find(ProductSection)).toHaveLength(1);
 });
 
-it('render basic page with no products', () => {
-  const component = shallow(<App />);
-  expect(component).toMatchSnapshot();
-});
-
-it('render page with products', async () => {
-  const component = shallow(<App />);
-  expect(component).toMatchSnapshot();
-  await waitForAsync();
-  component.update();
+it('render page with products', () => {
   expect(component).toMatchSnapshot();
 });
