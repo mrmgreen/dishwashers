@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 I'm using normalize.css to clear native styles.
 
-[perm](##test)
+[perm](#test)
 
 ## `npm i`
 
